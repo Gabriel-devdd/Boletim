@@ -17,7 +17,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     if ($nota1 < 0 || $nota2 < 0 || $nota3 < 0){
         $mensagem = "Coloque uma nota maior que zero";
     }else{
-        $media = round(($nota1 + $nota2 + $nota3)/3, 2);
+        $media = ($nota1 + $nota2 + $nota3)/3;
 
         if($media >= 7){
             $mensagem = "Aprovado!";
